@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Operations sur des nombres</string>
+    <string name="button_name">Calculer</string>
+</resources>
