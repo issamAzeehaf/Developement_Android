@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:text="@string/addEtudiant"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="402dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Nom"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/nomField"
+                android:layout_width="335dp"
+                android:layout_height="match_parent"
+                android:hint="Entrer le nom" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="402dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Prenom"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/prenomField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Entrer le prenom" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="402dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Telephone"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/telephoneField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Entrer le Telephone" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="402dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/emailField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Entrer l'email " />
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Enregistrer Un etudiant" />
+    </TableLayout>
+</LinearLayout>

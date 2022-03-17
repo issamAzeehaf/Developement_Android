@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TPs4</string>
+    <string name="Liste">Liste des étudiant</string>
+    <string name="addEtudiant">Ajouter un etudiant</string>
+    <string name="Nom">Nom</string>
+    <string name="Prenom">Prenom</string>
+    <string name="Telephone">Telephone</string>
+    <string name="Email">Email</string>
+</resources>
