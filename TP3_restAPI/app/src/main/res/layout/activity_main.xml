@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttoncColor"
+        android:fontFamily="@font/asset"
+        android:text="News"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="40dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Name  :"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/nameField"
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:hint="Anything"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Date    :"
+                android:textSize="25dp" />
+            <EditText
+                android:id="@+id/dateField"
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:hint="YYYY/MM/DD"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/Chercher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/buttoncColor"
+                android:text="Chercher" />
+        </TableRow>
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>
